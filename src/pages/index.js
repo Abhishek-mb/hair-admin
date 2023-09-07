@@ -11,6 +11,7 @@ import { Leads } from "../components/dashboard/total-Leads.js";
 // import { TrafficByDevice } from "../components/dashboard/traffic-by-device";
 import { DashboardLayout } from "../components/dashboard-layout";
 
+
 const Page = () => (
   <>
     <Head>
