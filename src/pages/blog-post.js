@@ -2,9 +2,9 @@ import Head from 'next/head';
 import { Box, Container, Grid, Typography } from '@mui/material';
 import { AddBlog } from '../components/blogs/AddBlog';
 import { DashboardLayout } from '../components/dashboard-layout';
-
+import LoaderLayout from '../components/loaderLayout';
 const Page = () => (
-  <>
+  <LoaderLayout>
     <Head>
       <title>
       Blog Post | Admin Panel
@@ -39,7 +39,7 @@ const Page = () => (
         </Grid>
       </Container>
     </Box>
-  </>
+  </LoaderLayout>
 );
 
 Page.getLayout = (page) => (

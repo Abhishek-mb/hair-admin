@@ -10,10 +10,10 @@ import { Leads } from "../components/dashboard/total-Leads.js";
 // import { TotalProfit } from "../components/dashboard/total-profit";
 // import { TrafficByDevice } from "../components/dashboard/traffic-by-device";
 import { DashboardLayout } from "../components/dashboard-layout";
-
+import LoaderLayout from "../components/loaderLayout";
 
 const Page = () => (
-  <>
+  <LoaderLayout>
     <Head>
       <title>Dashboard | Admin Panel</title>
     </Head>
@@ -44,7 +44,7 @@ const Page = () => (
         </Grid>
       </Container>
     </Box>
-  </>
+  </LoaderLayout>
 );
 
 Page.getLayout = (page) => <DashboardLayout>{page}</DashboardLayout>;

@@ -5,6 +5,7 @@ import { Box, Button, Container, Grid, Link, TextField, Typography } from "@mui/
 import { ToastContainer, toast } from "react-toastify";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
+import LoaderLayout from "../components/loaderLayout";
 
 const Login = () => {
   const router = useRouter();
@@ -63,7 +64,7 @@ const Login = () => {
       });
   };
   return (
-    <>
+    <LoaderLayout>
       <Head>
         <title>Hair app | Login</title>
       </Head>
@@ -127,7 +128,7 @@ const Login = () => {
           </form>
         </Container>
       </Box>
-    </>
+    </LoaderLayout>
   );
 };
 

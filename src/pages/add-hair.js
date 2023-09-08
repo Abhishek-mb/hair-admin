@@ -3,9 +3,9 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import { DashboardLayout } from "../components/dashboard-layout";
 // import { SubCategory } from '../components/category/subCategory';
 import { Hair } from "../components/product/product-card";
-
+import LoaderLayout from "../components/loaderLayout";
 const Page = () => (
-  <>
+  <LoaderLayout>
     <Head>
       <title>Hair | Admin Panel</title>
     </Head>
@@ -27,7 +27,7 @@ const Page = () => (
         </Grid>
       </Container>
     </Box>
-  </>
+  </LoaderLayout>
 );
 
 Page.getLayout = (page) => <DashboardLayout>{page}</DashboardLayout>;

@@ -2,9 +2,10 @@ import Head from "next/head";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { TermsAndConditions } from "../components/termsAndConditions.js";
 import { DashboardLayout } from "../components/dashboard-layout.js";
+import LoaderLayout from "../components/loaderLayout";
 
 const Page = () => (
-  <>
+  <LoaderLayout>
     <Head>
       <title>Terms and Conditions | Admin Panel</title>
     </Head>
@@ -26,7 +27,7 @@ const Page = () => (
         </Grid>
       </Container>
     </Box>
-  </>
+  </LoaderLayout>
 );
 
 Page.getLayout = (page) => <DashboardLayout>{page}</DashboardLayout>;

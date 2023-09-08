@@ -3,9 +3,10 @@ import { Box, Container, Typography } from '@mui/material';
 import { DashboardLayout } from '../components/dashboard-layout';
 import { SettingsNotifications } from '../components/settings/settings-notifications';
 import { SettingsPassword } from '../components/settings/settings-password';
+import LoaderLayout from "../components/loaderLayout";
 
 const Page = () => (
-  <>
+  <LoaderLayout>
     <Head>
       <title>
         Settings | Material Kit
@@ -31,7 +32,7 @@ const Page = () => (
         </Box>
       </Container>
     </Box>
-  </>
+  </LoaderLayout>
 );
 
 Page.getLayout = (page) => (

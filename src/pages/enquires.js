@@ -3,9 +3,10 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import { Bloglist } from "../components/blogs/BlogList";
 import { DashboardLayout } from "../components/dashboard-layout";
 import { EnquiryList } from "../components/enquires/enquires";
+import LoaderLayout from "../components/loaderLayout";
 
 const Page = () => (
-  <>
+  <LoaderLayout>
     <Head>
       <title>Enquires List | Admin Panel</title>
     </Head>
@@ -27,7 +28,7 @@ const Page = () => (
         </Grid>
       </Container>
     </Box>
-  </>
+  </LoaderLayout>
 );
 
 Page.getLayout = (page) => <DashboardLayout>{page}</DashboardLayout>;
