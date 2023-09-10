@@ -162,7 +162,7 @@ export const Hair = (props) => {
           });
           setValues([]);
           console.log(r);
-          // router.push("/product-list");
+          router.push("/hair-list");
         },
         (err) => {
           toast.error(err, {
